@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hjxxlearn.gulimall</groupId>
+	<artifactId>gulimall</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>gulimall</name>
+	<description>聚合服务</description>
+	<packaging>pom</packaging>  <!--设置项目构建方式，默认为JAR，此处为pom，
+	                              Maven 将会认为这是一个聚合项目，它不会尝试
+	                              去构建该项目产生任何可执行的输出，而是会将其
+	                              用作其他子项目的管理容器-->
+	<modules>
+		<module>gulimall-order</module>
+		<module>gulimall-member</module>
+		<module>gulimall-coupon</module>
+		<module>gulimall-product</module>
+		<module>gulimall-ware</module>
+	</modules>
+
+</project>
